@@ -1,0 +1,39 @@
+.form-wrapper {
+    padding: 2rem;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .form-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        color: #333;
+        text-align: center;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+
+        mat-form-field {
+            width: 100%;
+
+            mat-label {
+                font-weight: 500;
+            }
+
+            mat-hint {
+                font-size: 0.75rem;
+                color: #666;
+            }
+        }
+    }
+}
+
+
+input.mat-input-element {
+    color: black !important;
+    background-color: white !important;
+}

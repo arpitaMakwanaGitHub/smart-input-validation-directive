@@ -1,0 +1,59 @@
+<div class="form-wrapper">
+    <h1 class="form-title">🧪 Input Validation Directive Demo</h1>
+
+    <div class="form-grid">
+        <mat-form-field appearance="outline">
+            <mat-label>Quantity</mat-label>
+            <input matInput validateInput="quantity">
+            <mat-hint>Digits only (no negative allowed)</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Free Units</mat-label>
+            <input matInput validateInput="free">
+            <mat-hint>Digits or n, N, h, H (max 3 chars)</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Discount (%)</mat-label>
+            <input matInput validateInput="discount">
+            <mat-hint>Warning above 50%</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Month</mat-label>
+            <input matInput validateInput="month">
+            <mat-hint>Allowed 1–12 only</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Year</mat-label>
+            <input matInput validateInput="year">
+            <mat-hint>Only 2-digit year</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>GST %</mat-label>
+            <input matInput validateInput="gst">
+            <mat-hint>Max 2 digits (e.g., 5, 12, 18)</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Sales Quantity</mat-label>
+            <input matInput validateInput="salesQuantity">
+            <mat-hint>No negative value allowed</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Batch No</mat-label>
+            <input matInput validateInput="batch">
+            <mat-hint>Alphanumeric, / and - allowed</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Bill No</mat-label>
+            <input matInput validateInput="billno">
+            <mat-hint>A-Z, 0–9, /, - only</mat-hint>
+        </mat-form-field>
+    </div>
+</div>
